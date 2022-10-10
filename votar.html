@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votar</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="regiao.html">Regiao</a>
+            <a href="votar.html">Votar</a>
+            <a href="contatos.html">Contatos</a>
+        </nav>
+    </header>
+    <div class="container p-3">
+        <h1 class="text-color text-font">Votar</h1>
+        
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="62b07add-9a3f-48b7-b843-e16f7e5edcf0">
+            <div class="">
+                <label for="nome" class="">Nome:</label>
+                <input type="text" name="name" class="" id="nome" placeholder="Digite seu Nome" required>
+            </div>
+            <div class="">
+                <label for="sobrenome" class="">Sobrenome:</label>
+                <input type="text" name="name" class="" id="sobrenome" placeholder="Digite seu sobrenome">
+            </div>
+            <div class="">
+                <label for="email" class="">Email:</label>
+                <input type="email" name="email" class="" id="email" aria-describedby="emailHelp" placeholder="Digite seu email" required>
+                <div id="emailHelp" class="">Nao sera divulgado.</div>
+            </div>
+            <div class="">
+                <div class="">
+                    <label for="cep" class="">CEP:</label>
+                    <input type="text" name="subject" class="" placeholder="Digite seu CEP" id="cep" required>
+                </div>
+                <div class="">
+                    <label for="endereco" class="">Endereço:</label>
+                    <input type="text" name="subject" class="" placeholder="Digite seu endereço" id="endereco">
+                </div>
+                <div class="">
+                    <label for="numeroCasa" class="">Numero da casa:</label>
+                    <input type="text" name="subject" placeholder="Digite o Numero da casa" id="numeroCasa">
+                </div>
+                <div class="">
+                    <label for="estado" class="">Estado:</label>
+                    <input type="text" name="subject" class="" placeholder="Digite seu Estado" id="estado">
+                </div>
+                <div class="">
+                    <label for="regiao" class="">Regiao:</label>
+                    <input type="text" name="subject" class="" placeholder="Digite sua Regiao" id="regiao">
+                </div>
+            </div>
+            <div>
+                <label for="voto" class="">Seu voto:</label>
+                <input type="text" name="subject" class="" placeholder="A Melhor Regiao" id="voto" required>
+                <div class="">
+                    <label id="criterio">Principal Criterio: (Opcional)</label>
+                    <input type="checkbox" for="criterio" class="">Comidas Tipicas</input>
+                    <input type="checkbox" for="criterio" class="">Clima</input>
+                    <input type="checkbox" for="criterio" class="">Pontos Turisticos</input>
+                </div>
+            </div>
+            <div>
+                <label for="motivo">Escreva sobre o motivo do seu voto: (Opcional)</label>
+                <textarea name="message" id="motivo" >
+                </textarea>
+            </div>
+            <div class="">
+                <div class="">
+                    <input type="checkbox" name="idade" class="" id="">
+                    <label class="" for="">Maior de 18 anos</label>
+                </div>
+            </div>
+            <div class="">
+                <input type="checkbox" name="certo" class="" id="">
+                <label class="" for="">Esta tudo certo!</label>
+            </div>
+            <button type="submit" class="">Votar</button>
+        </form>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+<script src="js/maskForms.js"></script>
+
+</html>
