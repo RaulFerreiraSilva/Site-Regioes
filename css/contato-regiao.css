@@ -1,0 +1,26 @@
+
+
+.nossoTime {
+  display: block;
+  position: relative;
+  background-color: #0077b5;
+}
+
+.imgLogo{
+ 
+  margin: 10vh;
+  padding: 5vh;
+  width: 10%;
+}
+
+.leo {
+  display: block;
+  position: absolute;
+  justify-content: space-around;
+}
+
+.leo img {
+  margin: 10vh;
+  padding: 5vh;
+  width: 10%;
+}
