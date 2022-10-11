@@ -1,11 +1,7 @@
-
-
-
 //Função para limpar o formulário
 const limparFormulario = (endereco) => {
     document.getElementById('endereco').value = '';
     document.getElementById('bairro').value = '';
-
     document.getElementById('estado').value = '';
 }
 
@@ -17,8 +13,6 @@ const preencherFormulario = (endereco) => {
     document.getElementById('estado').value = endereco.uf;
 
 }
-// numero = numero.replace(".",null);
-// numero = numero.replace("-",null);
 
 //valida os números do cep
 const eNumero = (numero) => /^[0-9]+$/.test(numero)
@@ -34,7 +28,7 @@ const cepValido = (cep) => cep.length == 8 && eNumero(cep);
 // o cep que for digitado será passado pela api
 const pesquisarCep = async () => {
     limparFormulario()
-    const cep = document.getElementById('cep').value
+    const cep = document.getElementById('cep').value.replace(".","").replace("-","");
     const url = `https://viacep.com.br/ws/${cep}/json/`
 
     if (cepValido(cep)) {
@@ -51,7 +45,6 @@ const pesquisarCep = async () => {
     }
 
 }
+
 //event listenner fica esperando um evento acontecer
-
 document.getElementById('cep').addEventListener('focusout', pesquisarCep);
-
