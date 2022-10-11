@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +8,7 @@
 }
 
 :root {
-    --bg-color: rgb(0, 0, 0);
-    --primary-color: hsl(205, 38%, 54%)
+    --primary-color: #ffff;
 }
 
 body {
@@ -18,8 +18,28 @@ body {
     align-items: center;
     min-height: 100vh;
    
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgb(87, 78, 192) 0%, rgb(44, 43, 40) 100%);
+    background: linear-gradient(269deg, #16b83e, #ffe11f, #1651b8);
+    background-size: 600% 600%;
+
+    -webkit-animation: BandeiraBrasil 30s ease infinite;
+    -moz-animation: BandeiraBrasil 30s ease infinite;
+    animation: BandeiraBrasil 30s ease infinite;
+}
+
+@-webkit-keyframes BandeiraBrasil {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+@-moz-keyframes BandeiraBrasil {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+@keyframes BandeiraBrasil {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
 }
 
 .container {
@@ -44,11 +64,13 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
 }
+
 .inputbox {
     position: relative;
     display: flex;
     flex-direction: column-reverse;
     height: 40px;
+    margin-bottom: 3.5vh;
 }
 
 .inputbox label {
@@ -99,8 +121,4 @@ body {
     font-size: 20px;
     font-weight: bold;
     border-radius: 2px;
-}
-
-footer {
-    color: var(--primary-color);
 }

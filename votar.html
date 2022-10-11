@@ -5,92 +5,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estrutara-regiao.css">
+
     <title>Votar</title>
 </head>
 
 <body>
     <header>
-        <nav> 
-            <a href="regiao.html">Regiao</a>
+        <nav class="navbar">
+            <a class="" href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Regiões
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="norte.html">Norte</a>
+                    <a href="nordeste.html">Nordeste</a>
+                    <a href="centroOeste.html">Cento-Oeste</a>
+                    <a href="sudeste.html">Sudeste</a>
+                    <a href="sul.html">Sul</a>
+                </div>
+            </div>
             <a href="votar.html">Votar</a>
-            <a href="contato.html">Contatos</a>
+            <a href="contato.html">Contato</a>
         </nav>
     </header>
     <main class="container">
-        <h1 class="title">Cadastro</h1>
-        <div class="row">
-            <div class="inputbox">
-                <input type="text" id="nome" required>
-                <label for="nome">Nome</label>
+        <h1 class="title">Votar</h1>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="333f7cbc-1bc4-472d-8a45-a4aac64ae799">
+            <div class="row">
+                <div class="inputbox">
+                    <input type="text" name="name" id="nome" required>
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="$Email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
             </div>
-            <div class="inputbox">
-                <input type="text" id="email"  required>
-                <label for="email">Email</label>
+            <div class="row">
+                <div class="inputbox">
+                    <input type="text" name="$Cep" id="cep" required>
+                    <label for="cep">CEP</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="$Endereco" id="endereco" required>
+                    <label for="endereco">Endereço</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="$NumeroCasa" id="numero" required>
+                    <label for="numero">Número</label>
+                </div>
+                <!-- </div> -->
+                <!-- <div class="row"> -->
+                <div class="inputbox">
+                    <input type="text" name="$Bairro" id="bairro" required>
+                    <label for="bairro">Bairro</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="$Estado" id="estado" required>
+                    <label for="estado">Estado</label>
+                </div>
+                <div class="inputbox">
+                    <select id="voto" name="$Voto" class="form-select">
+                        <option selected>Informar</option>
+                        <option>Norte</option>
+                        <option>Nordeste</option>
+                        <option>Centro Oeste</option>
+                        <option>Sudeste</option>
+                        <option>Sul</option>
+                    </select>
+                    <label for="voto">Seu voto</label>
+                </div>
+
+
             </div>
-        </div>
-        <div class="row">
-            <div class="inputbox">
-                <input type="text" id="cep"  required>
-                <label for="cep">CEP</label>
-            </div>
-            <div class="inputbox">
-                <input type="text" id="endereco"  required>
-                <label for="endereco">Endereço</label>
-            </div>
-            <div class="inputbox">
-                <input type="text" id="numero"  required>
-                <label for="numero">Número</label>
-            </div>
-        <!-- </div> -->
-        <!-- <div class="row"> -->
-            <div class="inputbox">
-                <input type="text" id="bairro"  required>
-                <label for="bairro">Bairro</label>
-            </div>
-            <div class="inputbox">
-                <input type="text" id="estado"  required>
-                <label for="estado">Estado</label>
-            </div>
-            <div class="inputbox">
-                <input type="text" id="voto" required>
-                <label for="voto">Seu voto</label>
-            </div>
-          
-           
-        </div>
             <div>
-                <label for="voto" class="">Seu voto:</label>
-                <input type="text" name="subject" class="" placeholder="A Melhor Regiao" id="voto" required>
                 <div class="">
                     <label id="criterio">Principal Criterio: (Opcional)</label>
-                    <input type="checkbox" for="criterio" class="">Comidas Tipicas</input>
-                    <input type="checkbox" for="criterio" class="">Clima</input>
-                    <input type="checkbox" for="criterio" class="">Pontos Turisticos</input>
+                    <input type="checkbox" name="$Prato" for="criterio-Prato" class="">
+                    <label for="criterio-Prato">Prato Tipico</label>
+                    <input type="checkbox" name="$Clima" for="criterio-Clima" class="">
+                    <label for="criterio-Clima">Clima</label>
+                    <input type="checkbox" name="Pontos" for="criterio-Pontos" class="">
+                    <label for="criterio-Pontos"></label>
                 </div>
             </div>
             <div>
                 <label for="motivo">Escreva sobre o motivo do seu voto: (Opcional)</label>
-                <textarea name="message" id="motivo" >
+                <textarea name="message" id="motivo">
                 </textarea>
             </div>
             <div class="">
                 <div class="">
-                    <input type="checkbox" name="idade" class="" id="">
-                    <label class="" for="">Maior de 18 anos</label>
+                    <input type="checkbox" name="$Idade" class="" id="idade" required>
+                    <label class="" for="idade">Maior de 18 anos</label>
                 </div>
             </div>
             <div class="">
-                <input type="checkbox" name="certo" class="" id="">
-                <label class="" for="">Esta tudo certo!</label>
+                <input type="checkbox" name="$certo" class="" id="certo" required>
+                <label class="" for="certo">Esta tudo certo!</label>
             </div>
+            <input type="hidden" name="redirectTo" value="https://i.gifer.com/AYZH.gif"> 
             <button type="submit" class="">Votar</button>
         </form>
-    </div>
+    </main>
+    <footer>
+        <h4>Feito com Doçura pelo team CandyDevs</h4>
+    </footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 <script src="js/maskForms.js"></script>
 <script src="js/cep.js"></script>
+
 </html>
