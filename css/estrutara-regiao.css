@@ -26,3 +26,39 @@ ul{
 .tituloContato{
     color: greenyellow;
 }
+/**/
+.seila{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 80%;
+}
+.sul{
+height: 130px;
+width: 130px;
+}
+.container{  
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 20rem; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+.containerpra{
+    border: solid;
+    background-color: aqua;
+    padding: 20px;
+    display: flex;
+    width: 60rem; 
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+.carne{
+    height: 100px;
+    width: 190px;
+}
+.carne,.carnet{
+    text-align: center;
+}
