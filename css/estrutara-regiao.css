@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-shadow: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.bandeira {
+main{
+    height: 100vh;
+}
+
+.bandeira{
 
     background: linear-gradient(269deg, #16b83e, #ffe11f, #1651b8);
     background-size: 600% 600%;
@@ -64,14 +71,12 @@
     flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
-
     font-family: Arial;
 
 }
 
 /* Links inside the navbar */
 .navbar a {
-    width: 120px;
     float: left;
     font-size: 16px;
     color: white;
@@ -85,7 +90,10 @@
     float: left;
     overflow: hidden;
     z-index: 1;
-    color: black;
+}
+
+.dropbtn{
+    color: white;
 }
 .bascon{
     text-align: center;
@@ -108,27 +116,24 @@
     margin-right: auto; 
 }
 
-/* Dropdown button */
 .dropdown .dropbtn {
     font-size: 30px;
     border: none;
     outline: none;
-    color: rgb(0, 0, 0);
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
-    /* Important for vertical align on mobile phones */
     margin: 0;
-    /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-    background-color: red;
+.navbar .active{
+    color: black;
 }
 
-/* Dropdown content (hidden by default) */
+.navbar a:hover, :hover.dropbtn{
+    color: black;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -140,9 +145,7 @@
 
 /* Links inside the dropdown */
 .dropdown-content a {
-
     float: none;
-    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -151,7 +154,7 @@
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #ffe11f;
 }
 
 /* Show the dropdown menu on hover */
@@ -163,7 +166,7 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid greenyellow;
+    border: 5px solid;
 }
 
 .center {
@@ -171,17 +174,22 @@
 }
 
 .tituloContato {
-    color: greenyellow;
+    
 }
 
-.seila {
+.titulo-regiao{
+    font-size: 4em;
+}
+
+.descrisao-Regiao {
+    margin: 3vh 0 3vh;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
 }
 
-.sul {
+.imgRegiao {
     height: 130px;
     width: 130px;
 }
@@ -206,14 +214,22 @@
 
 }
 
-.carne {
+.img-pratoTipico {
     height: 100px;
     width: 190px;
 }
 
-.carne,
-.carnet {
+.img-pratoTipico,
+.texto-pratoTipico {
     text-align: center;
+}
+
+.titulo-pontosTuristicos{
+    margin: 10vh 0 0 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3em;
 }
 
 footer {
@@ -222,5 +238,6 @@ footer {
     padding-top: 4vh;
     height: 8vh;
     text-align: center;
+    font-size: 20px;
     color: #ffff;
 }

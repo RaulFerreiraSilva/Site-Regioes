@@ -7,68 +7,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estrutara-regiao.css">
     <link rel="stylesheet" href="css/card-regiao.css">
+    <link rel="stylesheet" href="css/sul.css">
     <title>Região</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar"> 
-            <a class="" href="index.html">Home</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
             <div class="dropdown">
-              <button class="dropbtn">Regiões
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="norte.html">Norte</a>
-                <a href="nordeste.html">Nordeste</a>
-                <a href="centroOeste.html">Cento-Oeste</a>
-                <a href="sudeste.html">Sudeste</a> 
-                <a href="sul.html">Sul</a> 
-              </div>
+                <button class="active dropbtn">Regiões
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="norte.html">Norte</a>
+                    <a href="nordeste.html">Nordeste</a>
+                    <a href="centroOeste.html">Cento-Oeste</a>
+                    <a href="sudeste.html">Sudeste</a>
+                    <a class="active" href="sul.html">Sul</a>
+                </div>
             </div>
             <a href="votar.html">Votar</a>
             <a href="contato.html">Contato</a>
         </nav>
     </header>
-    <div class="container-Regiao">
-        <img class="sul" src="/img/sul.png" alt="">
-        <h1 class="re">Regiões</h1>
-        <h2> (Clima)</h2>
-    </div>
-    <div class="seila">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illo fuga nulla similique totam consequuntur.
-            Atque rem ea minus velit neque, veniam quos repellat fugit! Assumenda voluptatibus ratione cumque
-            laboriosam!</p>
-    </div>
-    <div class="containerprin">
-    </div>
-    <div class="containerpra">
-        <div>
-            <img class="carne" src="/img/carne.png" alt="">
-            <p class="carnet">Carne</p>
-        </div>
-        <div>
-            <img class="carne" src="/img/carne.png" alt="">
-            <p class="carnet">Carne</p>
-        </div>
-        <div>
-            <img class="carne" src="/img/carne.png" alt="">
-            <p class="carnet">Carne</p>
-        </div>
-        <div>
-            <img class="carne" src="/img/carne.png" alt="">
-            <p class="carnet">Carne</p>
-        </div>
-        <div>
-            <img class="carne" src="/img/carne.png" alt="">
-            <p class="carnet">Carne</p>
-        </div>
-    </div>
     <main>
+        <div class="container-Regiao">
+            <img class="imgRegiao" src="/img/sul.png" alt="">
+            <h1 class="titulo-regiao">Sul</h1>
+            <h2> (Clima)</h2>
+        </div>
+        <div class="descrisao-Regiao">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illo fuga nulla similique totam
+                consequuntur.
+                Atque rem ea minus velit neque, veniam quos repellat fugit! Assumenda voluptatibus ratione cumque
+                laboriosam!</p>
+        </div>
+        <div class="containerprin">
+        </div>
+        <div class="containerpra">
+            <div>
+                <img class="img-pratoTipico" src="/img/carne.png" alt="">
+                <p class="texto-pratoTipico">Carne</p>
+            </div>
+            <div>
+                <img class="img-pratoTipico" src="/img/carne.png" alt="">
+                <p class="texto-pratoTipico">Carne</p>
+            </div>
+            <div>
+                <img class="img-pratoTipico" src="/img/carne.png" alt="">
+                <p class="texto-pratoTipico">Carne</p>
+            </div>
+            <div>
+                <img class="img-pratoTipico" src="/img/carne.png" alt="">
+                <p class="texto-pratoTipico">Carne</p>
+            </div>
+            <div>
+                <img class="img-pratoTipico" src="/img/carne.png" alt="">
+                <p class="texto-pratoTipico">Carne</p>
+            </div>
+        </div>
+
         <section>
             <div>
                 <div>
-                    <h2 class="title-text"> Pontos Turisticos </h2>
+                    <h2 class="titulo-pontosTuristicos"> Pontos Turisticos </h2>
                 </div>
                 <div>
                     <div class="card bg-pagina">
@@ -192,9 +195,11 @@
             </div>
         </section>
     </main>
+
     <footer>
         <p>Feito com doçura pelo time CandyDevs</p>
     </footer>
+    
 </body>
 <script src="js/cartaoPostar.js"></script>
 
