@@ -9,15 +9,14 @@
 
 :root {
     --primary-color: #ffff;
+    --font-color: #16b83e;
 }
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-   
+    align-items: center; 
     background: linear-gradient(269deg, #16b83e, #ffe11f, #1651b8);
     background-size: 600% 600%;
 
@@ -43,11 +42,11 @@ body {
 }
 
 .container {
+    height: 100vh;
     flex-grow: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
     padding: 20px;
     gap: 40px;
 }
@@ -97,6 +96,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     padding: 0 10px;
+    color: var(--font-color);
 }
 
 .inputbox input:focus,
@@ -121,4 +121,39 @@ body {
     font-size: 20px;
     font-weight: bold;
     border-radius: 2px;
+}
+
+select{
+    color: var(--font-color);
+    font-size: 20px;
+}
+
+.criterio{
+    text-align: justify;
+    color: var(--primary-color);
+    font-size: 20px;
+    margin: 0 0 0 55vw;
+    width: 30%;
+}
+
+.prato{
+    width: 20vw;
+   
+}
+.clima{
+    width: 20vw;
+}
+.criterios{
+    margin-right: 2vw;
+}
+
+.requisitos{
+    position: relative;
+    top: -10vh;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.botao{
+    margin: 0 0 0 32vw;
 }
