@@ -250,7 +250,7 @@ main{
   font-size: 3em;
 }
 
-footer {
+/* footer {
   bottom: 0;
   left: 0;
   padding-top: 4vh;
@@ -260,4 +260,36 @@ footer {
   font-size: 20px;
   color: #ffff;
   background: rgba(0, 0, 0, 0.2);
+} */
+.footer{
+ display: table;
+   width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: #ffff;
+
+}
+.mapa_footer{
+display: table-cell;
+}
+.direitos_footer{
+  display: table-cell;
+}
+.sobre_footer{
+  display: table-cell;
+}
+.canddev{
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0, 0, 0, 0.2); 
+}
+.texto_canddevs{
+
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
