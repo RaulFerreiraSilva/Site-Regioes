@@ -60,10 +60,6 @@
   }
 }
 
-main{
-  height: 100vh;
-}
-
 /*carrossel*/
 .conteudo{
   position: absolute;
@@ -73,24 +69,27 @@ main{
 
 .carrossel-secrion, 
 .carrossel{
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
 .carrossel .cavalinho{
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
 /* Navbar container */
 .navbar {
+  position: absolute;
+  top: 0;
   align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   font-family: Arial;
-  background: rgba(64, 64, 64, 0.5);
+  background: rgba(64, 64, 64, 0.7);
+  width: 100%;
 }
 
 /* Links inside the navbar */
