@@ -1,5 +1,20 @@
-
-
+.sobre_grupo{
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text_bombom{
+  text-align: center;
+}
+.titulo_cand{
+  margin: 3vh 0 3vh;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
 .nossoTime {
   display: block;
   position: relative;
