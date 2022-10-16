@@ -2,84 +2,68 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estrutara-regiao.css">
-
-    <title>Votação Região</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="css/estrutara-regiao.css">
+  <title>Votação Região</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <a class="active" href="index.html">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">Regiões
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="norte.html">Norte</a>
-                    <a href="nordeste.html">Nordeste</a>
-                    <a href="centroOeste.html">Cento-Oeste</a>
-                    <a href="sudeste.html">Sudeste</a>
-                    <a href="sul.html">Sul</a>
-                </div>
-            </div>
-            <a href="votar.html">Votar</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
-    <main>
-        <section class="container-background">
+  <section class="carrossel-section">
+    <div class="carrossel">
+      <img class="cavalinho" src="img/carrossel/carrossel-fut.jpg" alt="">
+      <img class="cavalinho" src="img/carrossel/carrossel-barco.jpg" alt="">
+      <img class="cavalinho" src="img/carrossel/carrossel-onça.jpg" alt="">
+      <img class="cavalinho" src="img/carrossel/carrossel-rio.jpg" alt="">
+      <img class="cavalinho" src="img/carrossel/carrossel-sp.jpg" alt="">
+    </div>
+  </section>
+  <header>
+    <nav class="navbar bandeira">
+      <a class="active" href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Regiões
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="norte.html">Norte</a>
+          <a href="nordeste.html">Nordeste</a>
+          <a href="centroOeste.html">Cento-Oeste</a>
+          <a href="sudeste.html">Sudeste</a>
+          <a href="sul.html">Sul</a>
+        </div>
+      </div>
+      <a href="votar.html">Votar</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
 
-            <!-- <div id="carrossel">
-                <ul>
-                    <li>
-                        <div class="carrossel-container">
-                            <img src="https://i1.wp.com/emotioncard.com.br/wp-content/uploads/2016/03/10-nat1.jpg?resize=660%2C495&ssl=1"
-                                alt="img1" />
-                        </div>
-                    </li>
+  <main>
+    <section class="conteudo">
+      <h1 class="titulo-regiao">Vote na Melhor Região do Basil</h1>
+      <h2 class="subTitulo-regiao">Queremos saber sua opnião sobre qual a melhor Região do Brasil.</h2>
+      <h3>Descrição:</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, qui voluptatum? Repellat sapiente
+        perspiciatis
+        aliquam harum, fuga saepe obcaecati ducimus, laborum dolores reprehenderit nostrum iste rem dignissimos
+        deleniti
+        vitae veritatis!
+      </p>
 
-                    <li>
-                        <div class="carrossel-container">
-                            <img src="https://i1.wp.com/emotioncard.com.br/wp-content/uploads/2016/03/1024x768.jpg?resize=660%2C495&ssl=1"
-                                alt="img1" />
-                        </div>
-                    </li>
+      <h3>Critério:</h3>
 
-                    <li>
-                        <div class="carrossel-container">
-                            <img src="https://i0.wp.com/emotioncard.com.br/wp-content/uploads/2016/03/natureza_.jpg?resize=660%2C352&ssl=1"
-                                alt="img1" />
-                        </div>
-                    </li>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dicta accusamus libero nostrum nam
+        repellendus
+        soluta temporibus cumque nemo alias culpa, quidem ut fugiat assumenda? Tempora, aliquid. Magnam, totam
+        officia?
+      </p>
 
-                </ul>
-            </div> -->
-
-</html>
-</section>
-<h1 class="regioes">Vote na Melhor Região do Basil</h1>
-
-<h2>Queremos saber sua opnião sobre qual a melhor Região do Brasil.</h2>
-<h3>Descrição:</h3>
-<p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, qui voluptatum? Repellat sapiente
-    perspiciatis
-    aliquam harum, fuga saepe obcaecati ducimus, laborum dolores reprehenderit nostrum iste rem dignissimos
-    deleniti
-    vitae veritatis!
-</p>
-<h3>Critério:</h3>
-<p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dicta accusamus libero nostrum nam
-    repellendus
-    soluta temporibus cumque nemo alias culpa, quidem ut fugiat assumenda? Tempora, aliquid. Magnam, totam
-    officia?
-</p>
-</main>
+    </section>
+  </main>
 
 <footer class="bandeira">
     <div class="footer">
@@ -104,7 +88,8 @@
     <h4 class="texto_canddevs">CandyDev</h4>
 </div>
 </body>
-
-<script src="https:kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/carrossel.js"></script>
 
 </html>
