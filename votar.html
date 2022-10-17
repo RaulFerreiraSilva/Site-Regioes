@@ -7,117 +7,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/estrutara-regiao.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     
-
     <title>Votar</title>
 </head>
 
 <body onload="escolher_regiao(regiao)">
-    <header>
-        <nav class="navbar">
-            <a class="" href="index.html">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">Regiões
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="norte.html">Norte</a>
-                    <a href="nordeste.html">Nordeste</a>
-                    <a href="centroOeste.html">Cento-Oeste</a>
-                    <a href="sudeste.html">Sudeste</a>
-                    <a href="sul.html">Sul</a>
-                </div>
-            </div>
-            <a href="votar.html">Votar</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
-    <main class="container">
-        <h1 class="title">Votar</h1>
-        <form action="https://api.staticforms.xyz/submit" method="post">
-            <input type="hidden" name="accessKey" value="333f7cbc-1bc4-472d-8a45-a4aac64ae799">
-            <div class="row">
-                <div class="inputbox">
-                    <input type="text" name="name" id="nome" required>
-                    <label for="nome">Nome</label>
-                </div>
-                <div class="inputbox">
-                    <input type="text" name="$Email" id="email" required>
-                    <label for="email">Email</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="inputbox">
-                    <input type="text" name="$Cep" id="cep" required>
-                    <label for="cep">CEP</label>
-                </div>
-                <div class="inputbox">
-                    <input type="text" name="$Endereco" id="endereco" required>
-                    <label for="endereco">Endereço</label>
-                </div>
-                <div class="inputbox">
-                    <input type="text" name="$NumeroCasa" id="numero" required>
-                    <label for="numero">Número</label>
-                </div>
-                <!-- </div> -->
-                <!-- <div class="row"> -->
-                <div class="inputbox">
-                    <input type="text" name="$Bairro" id="bairro" required>
-                    <label for="bairro">Bairro</label>
-                </div>
-                <div class="inputbox">
-                    <input type="text" name="$Estado" id="estado" required>
-                    <label for="estado">Estado</label>
-                </div>
-                <div class="inputbox">
-                    <input type="text" name="" id="votacao">
-                    <!-- <select id="voto" name="$Voto" class="form-select" required>
-                        <option selected>Informar</option>
-                        <option class="norte_voto" value="1">Norte</option>
-                        <option class="nordeste_voto" value="2">Nordeste</option>
-                        <option class="centro_voto" value="3">Centro Oeste</option>
-                        <option class="sudeste_voto" value="4">Sudeste</option>
-                        <option class="sul_voto" value="5">Sul</option>
-                    </select> -->
-                    <label for="voto">Seu voto</label>
-                </div>
-            </div>
-            <div>
-                <div class="criterio">
-                    <h3 id="criterio">Principal Criterio: (Opcional)</h3>
-                    <div class="prato">
-                        <label for="criterio-Prato" class="criterios">Prato Tipico</label><input type="checkbox"
-                            name="$Prato" for="criterio-Prato">
-                    </div>
-                    <div class="clima">
-                        <label for="criterio-Clima" class="criterios">Clima</label><input type="checkbox" name="$Clima"
-                            for="criterio-Clima">
-                    </div>
-                    <div>
-                        <label for="criterio-Pontos" class="criterios">Pontos Turisticos</label><input type="checkbox"
-                            name="Pontos" for="criterio-Pontos">
+    <div class="votar">
+        <header>
+            <nav class="navbar">
+                <a class="" href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Regiões<div class="seta"></div></button>
+                    <div class="dropdown-content">
+                        <a href="norte.html">Norte</a>
+                        <a href="nordeste.html">Nordeste</a>
+                        <a href="centroOeste.html">Cento-Oeste</a>
+                        <a href="sudeste.html">Sudeste</a>
+                        <a href="sul.html">Sul</a>
                     </div>
                 </div>
-            </div>
-            <div class="requisitos">
-                <div class="">
-                    <input type="checkbox" name="$Idade" class="" id="idade" required>
-                    <label class="" for="idade">Maior de 18 anos</label>
+                <a class="bandeira active" href="votar.html">Votar</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </header>
+        <main class="container">
+            <h1 class="title">Votar</h1>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="333f7cbc-1bc4-472d-8a45-a4aac64ae799">
+                <div class="row">
+                    <div class="inputbox">
+                        <input type="text" name="name" id="nome" required>
+                        <label for="nome">Nome</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="$Email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="inputbox">
+                        <input type="text" name="$Cep" id="cep" required>
+                        <label for="cep">CEP</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="$Endereco" id="endereco" required>
+                        <label for="endereco">Endereço</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="$NumeroCasa" id="numero" required>
+                        <label for="numero">Número</label>
+                    </div>
+                    <!-- </div> -->
+                    <!-- <div class="row"> -->
+                    <div class="inputbox">
+                        <input type="text" name="$Bairro" id="bairro" required>
+                        <label for="bairro">Bairro</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="$Estado" id="estado" required>
+                        <label for="estado">Estado</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="$Voto" id="votacao">
+                        <label for="voto">Seu voto</label>
+                    </div>
                 </div>
                 <div>
-                    <input type="checkbox" name="$certo" class="" id="certo" required>
-                    <label class="" for="certo">Esta tudo certo!</label>
+                    <div class="criterio">
+                        <h3 id="criterio">Principal Criterio: (Opcional)</h3>
+                        <div class="prato">
+                            <label for="criterio-Prato" class="criterios">Prato Tipico</label><input type="checkbox"
+                                name="$Prato" for="criterio-Prato">
+                        </div>
+                        <div class="clima">
+                            <label for="criterio-Clima" class="criterios">Clima</label><input type="checkbox"
+                                name="$Clima" for="criterio-Clima">
+                        </div>
+                        <div>
+                            <label for="criterio-Pontos" class="criterios">Pontos Turisticos</label><input
+                                type="checkbox" name="Pontos" for="criterio-Pontos">
+                        </div>
+                    </div>
                 </div>
+                <div class="requisitos">
+                    <div class="">
+                        <input type="checkbox" name="$Idade" class="" id="idade" required>
+                        <label class="" for="idade">Maior de 18 anos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="$certo" class="" id="certo" required>
+                        <label class="" for="certo">Esta tudo certo!</label>
+                    </div>
+                </div>
+                <input type="hidden" name="redirectTo" value="https://i.gifer.com/AYZH.gif">
+                <button type="submit" class="botao">Votar</button>
+            </form>
+
+        </main>
+    </div>
+
+    <footer class="bandeira">
+        <div class="footer">
+            <div>
+                <h4> Mapa do site</h4>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="votar.html">Votar</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </div>
-            <input type="hidden" name="redirectTo" value="https://i.gifer.com/AYZH.gif">
-            <button type="submit" class="botao">Votar</button>
-            
-        </form>
-        
-    </main>
-    <footer>
-        <h4>Feito com Doçura pelo team CandyDevs</h4>
+        </div>
     </footer>
+    <div class="canddev">
+        <h4 class="texto_canddevs"><span>®️</span>CandyDev</h4>
+    </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>

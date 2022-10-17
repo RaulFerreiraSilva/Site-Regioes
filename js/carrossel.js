@@ -5,7 +5,7 @@ $('.carrossel').slick({
   pauseOnFocus: false,
   pauseOnHover: false,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 3000,
   fade: true,
   cssEase: 'linear',
   prevArrow: false,

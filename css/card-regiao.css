@@ -6,9 +6,9 @@
 }
 
 .card, .card1, .card2{
-    margin: 10vh 10vw 5vh 10vw;
-    width: 80vw;
-    height: 80vh;    
+    margin: 10vh 0 5vh 15vw;
+    width: 70vw;
+    height: 60vh;    
 }
 
 .card__inner, .card__inner1, .card__inner2{
@@ -75,11 +75,11 @@
 }
 
 .titulo-cartao-atras{
-    margin: 3vh 0 1vh 15vw;
+    margin: 3vh 0 1vh 3vw;
 }
 
 .titulo-cartao-atras-lado{
-    margin: 3vh 0 1vh 10vw;
+    margin: 3vh 0 1vh 0;
 }
 
 .linha{
@@ -87,7 +87,7 @@
     top: 18vh;
     margin: 0 0 0 50%;
     width: 0;
-    height: 50vh;
+    height: 25vh;
     border: 1px solid black;
 }
 
@@ -100,7 +100,7 @@
     position: absolute;
     top: 8.5vh;
     width: 40%;
-    margin: 0 0 0 45vw;
+    margin: 0 0 0 38vw;
 }
 
 .conteudo-texto{

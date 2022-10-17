@@ -1,24 +1,12 @@
-body{
-    background: linear-gradient(270deg, #01676b, #607404, #914416);
-    background-size: 600% 600%;
-
-    -webkit-animation: AnimationName 23s ease infinite;
-    -moz-animation: AnimationName 23s ease infinite;
-    animation: AnimationName 23s ease infinite;
+.maskGradiente {
+    background: linear-gradient(180deg, rgba(155, 222, 0, 0.3), rgba(155, 222, 0, 0.85), rgba(0, 0, 0));
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+.containerpra{
+    background-color: #4B6511;
 }
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+
+.fundoImg {
+    background: no-repeat;
+    background-image: url(../img/regioes/norte/norteFundo.jpg);
 }

@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 
+/* Gradiente animado do Brasil */
 .bandeira {
   background: linear-gradient(269deg, #16b83e, #ffe11f, #1651b8);
   background-size: 600% 600%;
@@ -60,24 +61,24 @@
 }
 
 /*carrossel*/
-.conteudo{
+.conteudo {
   position: absolute;
   top: 10vh;
   width: 100%;
 }
 
-.carrossel-secrion, 
-.carrossel{
+.carrossel-secrion,
+.carrossel {
   height: 100%;
   width: 100%;
 }
 
-.carrossel .cavalinho{
+.carrossel .cavalinho {
   height: 100%;
   width: 100%;
 }
 
-/* Navbar container */
+/* Navbar */
 .navbar {
   position: absolute;
   top: 0;
@@ -100,17 +101,30 @@
   font-size: 30px;
   padding: 14px 16px;
   text-decoration: none;
+  margin-right: 2vw;
 }
 
 .dropdown {
-  float: left;
   overflow: hidden;
   z-index: 1;
+  width: 12vw;
 }
 
 .dropbtn {
   color: white;
 }
+
+.seta {
+  position: relative;
+  left: 8vw;
+  top: -3vh;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translateY(-50%);
+}
+
 .container-background {
   height: 100%;
   width: 100%;
@@ -118,6 +132,7 @@
   z-index: 10;
   position: absolute;
 }
+
 .regioes {
   align-items: center;
   text-align: center;
@@ -137,13 +152,14 @@
 }
 
 .navbar a:hover,
-:hover.dropbtn {
+button:hover{
   color: black;
   border-radius: 10px 10px 10px 10px;
 }
 
-.active{
+.navbar .active{
   border-radius: 10px 10px 10px 10px;
+  color: black;
 }
 
 .dropdown-content {
@@ -157,6 +173,7 @@
 }
 
 .dropdown-content a {
+  margin: 0;
   float: none;
   padding: 12px 16px;
   text-decoration: none;
@@ -171,41 +188,69 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* Final navBar */
 
-.img-Contato {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 5px solid;
-}
-
-.center {
-  text-align: center;
-}
+/* Conteudo index */
 
 .titulo-regiao {
-  font-size: 4em;
+  font-size: 6em;
+  margin-top: 10vh;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  color: white;
 }
 
-.subTitulo-regiao{
-  font-size: 1.7em;
+.index{
+  margin-top: 35vh;
+}
+
+.subTitulo-regiao {
+  font-size: 2.5em;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  color:white;
+}
+
+.descrisao{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 8vw;
+  margin-top: 10vh;
+  font-size: 1.5em;
+}
+
+.descrisao-site,.descrisao-criterio {
+  color: white;
+  width: 40%;
+  text-align: justify;
+}
+
+.descrisao-titulo{
+  font-size: 1.6em;
+  margin-bottom: 2vh;
+}
+/* Final conteudo index */
+
+/* Conteudo Regiao */
+
+.subTitulo-regioes{
+  margin-top: 2vh;
+  color: white;
 }
 
 .descrisao-Regiao {
   margin: 3vh 0 3vh;
-  text-align: center;
+  text-align: justify ;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
 
 .imgRegiao {
+  margin-top: 10vh;
   height: 130px;
   width: 130px;
 }
@@ -219,9 +264,29 @@
   margin-right: auto;
 }
 
+.descrisao-Regiao h3{
+  font-size: 1.7em;
+  color: black;
+}
+
+.descrisao-Regiao p{
+  color: white;
+  font-size: 1.3em;
+  border-radius: 10px;
+  font-weight: 400;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  margin-bottom: 3vh;
+}
+
+.titulo-prato{
+  margin-left: 20.5vw;
+  margin-bottom: 3vh;
+}
+
 .containerpra {
-  border: solid;
-  background-color: aqua;
+  border: solid none none;
+  border-radius: 10px;
   padding: 20px;
   display: flex;
   width: 60rem;
@@ -247,46 +312,47 @@
   font-size: 3em;
 }
 
-/* footer {
-  bottom: 0;
-  left: 0;
-  padding-top: 4vh;
-  height: 8vh;
-  width: 100%;
-  text-align: center;
-  font-size: 20px;
-  color: #ffff;
-  background: rgba(0, 0, 0, 0.2);
-} */
-.footer{
- display: table;
-   width: 100%;
-  text-align: center;
-  font-size: 20px;
-  color: #ffff;
+/* Conteudo Regiao */
+/* footer */
 
+.footer{
+  display: flex;
+  width: 100%;
+  justify-content:space-around;
+  text-align: justify;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffff; 
 }
-.mapa_footer{
-display: table-cell;
+
+.footer a{
+  text-decoration: none;
+  color: #ffff;
 }
-.direitos_footer{
-  display: table-cell;
-}
-.sobre_footer{
-  display: table-cell;
-}
-.canddev{
+
+.canddev {
   align-items: center;
   text-align: center;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  background: rgba(0, 0, 0, 0.2); 
+  background: rgba(129, 125, 125, 0.85);
 }
-.texto_canddevs{
 
+.texto_canddevs {
   text-align: center;
   display: flex;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* footer */
+
+/*contato*/
+
+.img-Contato {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid;
 }

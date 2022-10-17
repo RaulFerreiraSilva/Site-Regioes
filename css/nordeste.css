@@ -1,25 +1,12 @@
-body{
-    
-    background: linear-gradient(270deg, #a61c28, #5cacf2, #d97904);
-    background-size: 600% 600%;
-
-    -webkit-animation: AnimationName 23s ease infinite;
-    -moz-animation: AnimationName 23s ease infinite;
-    animation: AnimationName 23s ease infinite;
+.maskGradiente {
+    background: linear-gradient(180deg, rgba(255, 224, 3, 0.5), rgba(255, 224, 3, 0.85), rgba(0, 0, 0));
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+.containerpra{
+    background-color: #ff2400;
 }
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+
+.fundoImg {
+    background: no-repeat;
+    background-image: url(../img/regioes/nordeste/nordesteFundo.jpg);
 }
