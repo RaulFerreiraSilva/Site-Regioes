@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/estrutara-regiao.css">
+    
 
     <title>Votar</title>
 </head>
 
-<body>
+<body onload="escolher_regiao(regiao)">
     <header>
         <nav class="navbar">
             <a class="" href="index.html">Home</a>
@@ -69,14 +70,15 @@
                     <label for="estado">Estado</label>
                 </div>
                 <div class="inputbox">
-                    <select id="voto" name="$Voto" class="form-select" required>
+                    <input type="text" name="" id="votacao">
+                    <!-- <select id="voto" name="$Voto" class="form-select" required>
                         <option selected>Informar</option>
-                        <option value="1">Norte</option>
-                        <option value="2">Nordeste</option>
-                        <option value="3">Centro Oeste</option>
-                        <option value="4">Sudeste</option>
-                        <option value="5">Sul</option>
-                    </select>
+                        <option class="norte_voto" value="1">Norte</option>
+                        <option class="nordeste_voto" value="2">Nordeste</option>
+                        <option class="centro_voto" value="3">Centro Oeste</option>
+                        <option class="sudeste_voto" value="4">Sudeste</option>
+                        <option class="sul_voto" value="5">Sul</option>
+                    </select> -->
                     <label for="voto">Seu voto</label>
                 </div>
             </div>
@@ -109,7 +111,9 @@
             </div>
             <input type="hidden" name="redirectTo" value="https://i.gifer.com/AYZH.gif">
             <button type="submit" class="botao">Votar</button>
+            
         </form>
+        
     </main>
     <footer>
         <h4>Feito com Doçura pelo team CandyDevs</h4>
@@ -119,5 +123,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 <script src="js/maskForms.js"></script>
 <script src="js/cep.js"></script>
+<script src="js/escolha.js"></script>
+
 
 </html>
