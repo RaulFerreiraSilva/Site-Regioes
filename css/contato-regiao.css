@@ -5,6 +5,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
+  color: black;
 }
 .text_bombom{
   text-align: center;
@@ -23,6 +24,7 @@
 }
 
 .img-Contato{
+  margin-top: 10vh;
  width: 150px;
  height: 150px;
 }
