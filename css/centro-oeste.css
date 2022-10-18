@@ -10,3 +10,11 @@
     background: no-repeat;
     background-image: url(../img/regioes/centroOeste/centroOesteFundo.jpg);
 }
+.imgRegiao2{
+    margin-top: 10vh;
+    margin-left: 0px;
+
+    height: 280px;
+    width: 280px;
+
+}
