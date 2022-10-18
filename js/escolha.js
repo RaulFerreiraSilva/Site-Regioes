@@ -2,6 +2,7 @@ var regiao = "";
 
 function escolher_nordeste(){
     regiao = "Nordeste"
+    return CacheStorage = regiao
 }
 function escolher_norte(regiao){
     regiao = "Norte"
